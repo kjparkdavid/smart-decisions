@@ -41,3 +41,26 @@ ol,
 li {
     font-family: "Source Sans Pro", sans-serif;
 }
+
+#container {
+    height: 100vh;
+    background-color: rgb(108, 85, 177);
+    padding: 32px;
+    color: white;
+}
+
+#container h1 {
+    font-size: 28px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+}
+
+#container a {
+    text-decoration: none;
+}
