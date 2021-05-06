@@ -1,20 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <h1>Decisi🧐n·ize</h1>
+    <p>Simplify decision making in 3 easy steps</p>
+
+    <ol>
+      <li>Choices - What you're deciding between</li>
+      <li>Pros & Cons - What you stand to gain/lose and by how much</li>
+      <li>Affect - What affect your choices have on your pros & cons</li>
+    </ol>
+
+    <h2>The goal</h2>
+    <p>To discover which choice returns the highest net value.</p>
+
+    <ion-button color="primary" [routerLink]="['/choices']">Ready to begin?</ion-button>
   </div>
 </ion-content>
