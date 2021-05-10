@@ -1,15 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-choices',
-  templateUrl: './choices.page.html',
-  styleUrls: ['./choices.page.scss'],
+    selector: 'app-choices',
+    templateUrl: './choices.page.html',
+    styleUrls: ['./choices.page.scss'],
 })
 export class ChoicesPage implements OnInit {
+    choicesList = [];
 
-  constructor() { }
+    constructor() {}
 
-  ngOnInit() {
-  }
+    ngOnInit() {}
 
+    addListItem(input) {
+        this.choicesList.push(input);
+    }
 }

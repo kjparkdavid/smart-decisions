@@ -38,12 +38,13 @@ p,
 ion-item,
 ion-title,
 ol,
-li {
+li,
+* {
     font-family: "Source Sans Pro", sans-serif;
 }
 
 #container {
-    height: 100vh;
+    height: 100%;
     background-color: rgb(108, 85, 177);
     padding: 32px;
     color: white;

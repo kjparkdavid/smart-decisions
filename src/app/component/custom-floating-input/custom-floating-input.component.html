@@ -1,3 +1,4 @@
-<ion-item>
-  <ion-textarea autoGrow="true" rows="1" placeholder="Add a choice..."></ion-textarea>
+<ion-item class="gray-bottom-border" lines="none">
+  <ion-textarea autoGrow="true" rows="1" placeholder="Add a choice..." (ionInput)="inputChanged($event)"
+    [value]="inputValue" (keypress)="onChange($event)"></ion-textarea>
 </ion-item>

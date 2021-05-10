@@ -1,12 +1,25 @@
 <ion-content>
-  <div id="container">
-    <h1>1. Choices</h1>
-    <p>What are you deciding between? Add 2 or more choices below, then click next to proceed.</p>
+  <div id="container" class="choices-page-container">
 
-    <div class="input-container">
-      <app-custom-floating-input>
-      </app-custom-floating-input>
+    <div class="content-container">
+      <h1>1. Choices</h1>
+      <p>What are you deciding between? Add 2 or more choices below, then click next to proceed.</p>
+
+      <div class="input-container">
+        <app-custom-floating-input (addListItemEvent)="addListItem($event)">
+        </app-custom-floating-input>
+
+        <div class="choice-item" *ngFor="let choice of choicesList">
+          {{choice}}
+          <!-- <ion-input [value]="choice"></ion-input> -->
+        </div>
+      </div>
     </div>
 
+
+    <div class="button-container">
+      <ion-button color="primary" [routerLink]="['/home']">Back</ion-button>
+      <ion-button color="primary" [routerLink]="['/choices']">Next</ion-button>
+    </div>
   </div>
 </ion-content>

@@ -1,3 +1,38 @@
+.choices-page-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
 .input-container {
     margin-top: 16px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden scroll;
+    box-shadow: rgb(0 0 0 / 75%) 0px 3px 10px -3px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 16px;
+}
+
+.choice-item {
+    color: rgb(108, 85, 177);
+    padding: 32px 24px;
+    font-family: inherit;
+    border-bottom: 1px lightgrey solid;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
 }
